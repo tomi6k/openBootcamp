@@ -1,21 +1,21 @@
-class Alumnos():
-    def info(self, nombre, nota):
+class Alumnos():  # Clase Alumnos
+    def info(self, nombre, nota):  # Se inicializan los atributos base 
         self.nombre = nombre
         self.nota = nota
 
     
-    def imprimir(self):
-        print ("Nombre: ", self.nombre)
+    def imprimir(self):   # Metodo Imprimir
+        print ("Nombre: ", self.nombre)  
         print ("Nota: ", self.nota)
 
-    def resultado(self):
+    def resultado(self):   # Metodo que compara nota y dice si esta aprobado o no
         if self.nota < 5:
             print("Estas desaprobado")
         else :
             print("Estas aprobado")
 
-alumno1 = Alumnos()
-alumno2 = Alumnos()
+alumno1 = Alumnos()  # Instancia alumno1
+alumno2 = Alumnos()  # Instancia alumno2
 
 alumno1.info("Juan",6)
 alumno2.info("Lionel",10)
